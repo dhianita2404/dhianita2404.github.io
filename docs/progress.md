@@ -8,6 +8,7 @@
 - Bonus: tombol ganti tema terang/gelap dan menu HP (theme.js)
 - Seluruh teks website diterjemahkan ke bahasa Inggris; nomor telepon tetap ditampilkan
 - Publish ke GitHub Pages: https://dhianita2404.github.io (repo dhianita2404/dhianita2404.github.io)
+- Update pendidikan: tambah Harvard University (PhD, 2023 - 2026), PPM lulus 2026
 
 ## Sedang dikerjakan
 - Tidak ada

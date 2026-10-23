@@ -18,7 +18,8 @@ Experienced IT Product Owner with a solid foundation in Quality Assurance, bring
 *   **Tools & Software:** Automation Testing Tools, Jira, Trello, Notion, Figma, Whimsical, Xmind, Windows & SQL Server, Microsoft (Project, Visio).
 
 **Pendidikan**
-*   **PPM School of Management** (2025 - Present)
+*   **Harvard University** – PhD (2023 - 2026)
+*   **PPM School of Management** (2025 - 2026)
 *   **Universitas Gunadarma** (2020 - 2022)
 *   **Universitas Islam Indonesia** (2005 - 2009)
 

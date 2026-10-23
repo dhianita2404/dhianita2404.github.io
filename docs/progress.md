@@ -10,6 +10,7 @@
 - Publish ke GitHub Pages: https://dhianita2404.github.io (repo dhianita2404/dhianita2404.github.io)
 - Update pendidikan: tambah Harvard University (PhD, 2023 - 2026), PPM lulus 2026
 - Custom domain https://rorodhianita.my.id (file CNAME, Enforce HTTPS aktif). DNS di Rumahweb.
+- Tambah sertifikasi AI for Professional (2026). Sudah di-commit, belum di-push.
 
 ## Sedang dikerjakan
 - Tidak ada

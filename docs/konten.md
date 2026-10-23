@@ -24,6 +24,7 @@ Experienced IT Product Owner with a solid foundation in Quality Assurance, bring
 *   **Universitas Islam Indonesia** (2005 - 2009)
 
 **Sertifikasi & Beasiswa**
+*   **AI for Professional** (2026)
 *   **SAP Overview** – LearnIT Gunadarma (2022)
 *   **SAP Product Lifecycle Management** – LearnIT Gunadarma (2022)
 *   **Beasiswa Peningkatan Prestasi Akademik (PPA)** – Dikti (2007 - 2009)

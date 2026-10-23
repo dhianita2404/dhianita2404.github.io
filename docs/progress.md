@@ -1,0 +1,16 @@
+# Progress
+
+## Sudah selesai
+- Design brief (dari mockup `portofolio_dhianita.html`), tech stack, PRD, dan konten di folder docs
+- CLAUDE.md dan README.md
+- Beranda, Biodata, Project & Achievements, Kontak di index.html
+- 5 halaman detail project di folder proyek, dengan navigasi sebelumnya/berikutnya
+- Bonus: tombol ganti tema terang/gelap dan menu HP (theme.js)
+- Seluruh teks website diterjemahkan ke bahasa Inggris; nomor telepon tetap ditampilkan
+
+## Sedang dikerjakan
+- Tidak ada
+
+## Berikutnya
+- git init dan publish ke GitHub Pages
+- Pasang link website di LinkedIn

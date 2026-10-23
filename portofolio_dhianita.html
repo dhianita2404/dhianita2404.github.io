@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhianita Taurintyanna | IT Product Owner</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Custom elegant pink palette (Dusty Rose / Pastel Pink)
+                        brand: {
+                            50: '#fdf8f9',  // Off-white pink (Backgrounds)
+                            100: '#f8e9eb', // Very light pink (Hover states, badges)
+                            200: '#f3d3da', // Light pink borders
+                            300: '#ebb2be', // Accents
+                            400: '#df8799', // Stronger accents
+                            500: '#c55370', // Primary buttons/text
+                            600: '#a33c56', // Hover buttons/text
+                            700: '#873248',
+                            800: '#712a3d',
+                            900: '#5e2635',
+                        },
+                        neutral: {
+                            50: '#fafafa',
+                            100: '#f5f5f5',
+                            800: '#262626',
+                            900: '#171717',
+                        }
+                    },
+                    boxShadow: {
+                        'soft-pink': '0 10px 40px -10px rgba(223, 135, 153, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Styles for extra polish */
+        body {
+            background-color: #fafafa; /* Off-white */
+            color: #262626; /* Dark gray for readability */
+        }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(243, 211, 218, 0.5); /* subtle brand-200 */
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px -10px rgba(197, 83, 112, 0.15); /* Brand 500 shadow */
+            border-color: #ebb2be; /* Brand 300 */
+        }
+    </style>
+</head>
+<body class="antialiased font-sans text-neutral-800 selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="text-xl font-bold tracking-tight text-neutral-900 hover:text-brand-500 transition-colors">
+                    Dhianita<span class="text-brand-500">.</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#biodata" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Biodata</a>
+                    <a href="#projects" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Project</a>
+                    <a href="#contact" class="px-5 py-2 text-sm font-medium text-white bg-brand-500 rounded-full hover:bg-brand-600 transition-colors shadow-sm shadow-brand-200">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-neutral-600 focus:outline-none" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white border-t border-brand-100" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-soft-pink">
+                <a href="#biodata" class="block px-3 py-3 rounded-md text-base font-medium text-neutral-700 hover:text-brand-600 hover:bg-brand-50">Biodata</a>
+                <a href="#projects" class="block px-3 py-3 rounded-md text-base font-medium text-neutral-700 hover:text-brand-600 hover:bg-brand-50">Project</a>
+                <a href="#contact" class="block px-3 py-3 rounded-md text-base font-medium text-brand-600 hover:bg-brand-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-50">
+        <!-- Decorative abstract shape -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-100 opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-brand-200 opacity-30 blur-3xl"></div>
+        
+        <div class="relative max-w-6xl mx-auto px-6 lg:px-8 flex flex-col items-center text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-600 text-sm font-semibold tracking-wider mb-6">
+                Welcome to my portfolio
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-neutral-900 mb-6 leading-tight">
+                Hello, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-400">Roro Dhianita Taurintyanna</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-neutral-600 mb-4">
+                IT Product Owner & QA Specialist
+            </p>
+            <p class="max-w-2xl text-base md:text-lg text-neutral-500 mb-10 leading-relaxed">
+                Bridging technical and business requirements to drive product quality, efficiency, and customer satisfaction. Over 10 years of expertise in delivering high-quality digital products.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#projects" class="px-8 py-3.5 text-base font-medium text-white bg-brand-500 rounded-full hover:bg-brand-600 transition-all shadow-md shadow-brand-200">
+                    View My Projects
+                </a>
+                <a href="#contact" class="px-8 py-3.5 text-base font-medium text-brand-600 bg-white border border-brand-200 rounded-full hover:bg-brand-50 transition-all shadow-sm">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biodata Section -->
+    <section id="biodata" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <!-- About Me -->
+                <div>
+                    <h2 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+                        <span class="w-8 h-1 bg-brand-400 rounded-full"></span>
+                        Professional Summary
+                    </h2>
+                    <p class="text-neutral-600 leading-relaxed text-lg mb-6">
+                        Experienced IT Product Owner with a solid foundation in Quality Assurance. I bring over a decade of combined expertise in delivering high-quality digital products, specializing in software testing, user experience, and agile product management.
+                    </p>
+                    <p class="text-neutral-600 leading-relaxed text-lg mb-8">
+                        My strength lies in my proven ability to align cross-functional teams, transforming business visions into actionable roadmaps while maintaining strict quality standards and efficient workflows.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Core Competencies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <!-- Skills Badges -->
+                        <span class="px-4 py-2 bg-brand-50 text-brand-700 rounded-full text-sm font-medium border border-brand-100">Analytical Skill</span>
+                        <span class="px-4 py-2 bg-brand-50 text-brand-700 rounded-full text-sm font-medium border border-brand-100">Leadership</span>
+                        <span class="px-4 py-2 bg-brand-50 text-brand-700 rounded-full text-sm font-medium border border-brand-100">Project Management</span>
+                        <span class="px-4 py-2 bg-brand-50 text-brand-700 rounded-full text-sm font-medium border border-brand-100">Agile / Scrum</span>
+                        <span class="px-4 py-2 bg-brand-50 text-brand-700 rounded-full text-sm font-medium border border-brand-100">Automation Testing</span>
+                        <span class="px-4 py-2 bg-neutral-100 text-neutral-700 rounded-full text-sm font-medium">Jira</span>
+                        <span class="px-4 py-2 bg-neutral-100 text-neutral-700 rounded-full text-sm font-medium">Trello</span>
+                        <span class="px-4 py-2 bg-neutral-100 text-neutral-700 rounded-full text-sm font-medium">Figma</span>
+                        <span class="px-4 py-2 bg-neutral-100 text-neutral-700 rounded-full text-sm font-medium">Whimsical</span>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications -->
+                <div class="space-y-10">
+                    <div>
+                        <h2 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+                            <span class="w-8 h-1 bg-brand-400 rounded-full"></span>
+                            Education
+                        </h2>
+                        <div class="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-brand-200 before:to-transparent">
+                            <!-- Edu Item 1 -->
+                            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                                <div class="flex items-center justify-center w-5 h-5 rounded-full border-4 border-white bg-brand-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 ml-[3px] md:ml-0"></div>
+                                <div class="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] bg-white p-5 rounded-xl border border-neutral-100 shadow-sm">
+                                    <h4 class="font-bold text-neutral-900">PPM School of Management</h4>
+                                    <p class="text-sm text-brand-500 font-medium mt-1">2025 - Present</p>
+                                </div>
+                            </div>
+                            <!-- Edu Item 2 -->
+                            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                                <div class="flex items-center justify-center w-5 h-5 rounded-full border-4 border-white bg-brand-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 ml-[3px] md:ml-0"></div>
+                                <div class="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] bg-white p-5 rounded-xl border border-neutral-100 shadow-sm">
+                                    <h4 class="font-bold text-neutral-900">Universitas Gunadarma</h4>
+                                    <p class="text-sm text-brand-500 font-medium mt-1">2020 - 2022</p>
+                                </div>
+                            </div>
+                            <!-- Edu Item 3 -->
+                            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                                <div class="flex items-center justify-center w-5 h-5 rounded-full border-4 border-white bg-brand-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 ml-[3px] md:ml-0"></div>
+                                <div class="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] bg-white p-5 rounded-xl border border-neutral-100 shadow-sm">
+                                    <h4 class="font-bold text-neutral-900">Universitas Islam Indonesia</h4>
+                                    <p class="text-sm text-brand-500 font-medium mt-1">2005 - 2009</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+                            <span class="w-8 h-1 bg-brand-400 rounded-full"></span>
+                            Certifications
+                        </h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4 p-4 rounded-xl bg-brand-50 border border-brand-100">
+                                <div class="p-2 bg-white rounded-lg text-brand-500 shadow-sm">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-neutral-900">SAP Overview & SAP Product Lifecycle Management</h4>
+                                    <p class="text-sm text-neutral-500 mt-1">LearnIT Gunadarma • 2022</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Experience Section -->
+    <section id="projects" class="py-20 lg:py-28 bg-neutral-50 border-t border-neutral-200/60">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-600 text-sm font-semibold tracking-wider mb-4">
+                    Experience
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-neutral-900 mb-4">Projects & Achievements</h2>
+                <p class="text-neutral-500 max-w-2xl mx-auto text-lg">A track record of delivering successful digital products and leading quality assurance across various industries.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="project-card bg-white rounded-2xl p-8 border border-neutral-100 shadow-sm flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-400"></div>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-neutral-900 mb-1">B2B2C E-Commerce</h3>
+                        <p class="text-brand-500 font-medium text-sm">PT. Nusantara Aplikasi Sertimedia</p>
+                        <p class="text-neutral-400 text-xs mt-1">Nov 2025 - Present • Product Owner</p>
+                    </div>
+                    <ul class="space-y-3 text-neutral-600 text-sm flex-grow list-disc list-outside ml-4">
+                        <li>Designed the core business concept, product strategy, and business models including market segmentation.</li>
+                        <li>Established strategic partnerships with key stakeholders.</li>
+                        <li>Drove product development encompassing requirements gathering, user flow creation, and technical coordination.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card bg-white rounded-2xl p-8 border border-neutral-100 shadow-sm flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-300"></div>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-neutral-900 mb-1">NAS Online System</h3>
+                        <p class="text-brand-500 font-medium text-sm">PT. Nusantara Aplikasi Sertimedia</p>
+                        <p class="text-neutral-400 text-xs mt-1">2023 - Oct 2025 • Product Owner</p>
+                    </div>
+                    <ul class="space-y-3 text-neutral-600 text-sm flex-grow list-disc list-outside ml-4">
+                        <li>Developed and maintained product roadmaps aligning client needs with business goals.</li>
+                        <li>Led Scrum meetings and coordinated sprints for cross-functional teams.</li>
+                        <li>Initiated major product refactoring, transforming legacy systems into flexible, cost-efficient solutions.</li>
+                        <li>Ensured compliance with BNSP regulations and internal quality standards.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card bg-white rounded-2xl p-8 border border-neutral-100 shadow-sm flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-400"></div>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-neutral-900 mb-1">Tech Project Controller</h3>
+                        <p class="text-brand-500 font-medium text-sm">PT. Nusantara Sukses Teknologi</p>
+                        <p class="text-neutral-400 text-xs mt-1">2019 - 2023 • QA Lead & Controller</p>
+                    </div>
+                    <ul class="space-y-3 text-neutral-600 text-sm flex-grow list-disc list-outside ml-4">
+                        <li>Maintained strict project timelines and reported progress directly to the Board of Directors.</li>
+                        <li>Led the QA team, setting KPIs, assigning tasks, and acting as a technical advisor.</li>
+                        <li>Managed daily scrums and developer targets.</li>
+                        <li>Analyzed business processes and executed comprehensive System Integration Tests (SIT).</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card bg-white rounded-2xl p-8 border border-neutral-100 shadow-sm flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-300"></div>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-neutral-900 mb-1">Banking QA Operations</h3>
+                        <p class="text-brand-500 font-medium text-sm">PT. BTPN Syariah Tbk</p>
+                        <p class="text-neutral-400 text-xs mt-1">2018 - 2019 • QA Analyst</p>
+                    </div>
+                    <ul class="space-y-3 text-neutral-600 text-sm flex-grow list-disc list-outside ml-4">
+                        <li>Successfully led a team of 10+ QA specialists.</li>
+                        <li>Analyzed requirements and deployments across servers (Windows/Linux), codebase, and databases.</li>
+                        <li>Prepared and executed System Integration Tests (Scenario, Data, Environment).</li>
+                        <li>Conducted functional and performance tests using Automation Testing Tools.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-card bg-white rounded-2xl p-8 border border-neutral-100 shadow-sm flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-400"></div>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-neutral-900 mb-1">Dealership Go-Live</h3>
+                        <p class="text-brand-500 font-medium text-sm">PT. Astra Graphia IT</p>
+                        <p class="text-neutral-400 text-xs mt-1">2011 - 2013 • Business Process Analyst</p>
+                    </div>
+                    <ul class="space-y-3 text-neutral-600 text-sm flex-grow list-disc list-outside ml-4">
+                        <li>Managed Go-Live implementation across all Toyota and Daihatsu dealerships throughout Indonesia.</li>
+                        <li>Designed and managed test scenarios for Bug, Smoke, and Integration tests.</li>
+                        <li>Provided comprehensive user training, system delivery support, and created user documentation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-white border-t border-brand-100 pt-20 pb-10 relative overflow-hidden">
+        <!-- Subtle decorative background element -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[800px] h-[800px] rounded-full bg-brand-50 opacity-50 -z-10 pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-neutral-900 mb-6">Let's Work Together</h2>
+            <p class="text-lg text-neutral-600 mb-10 max-w-2xl mx-auto">
+                Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-16">
+                <!-- Email -->
+                <a href="mailto:dhianitataurintyanna@gmail.com" class="flex items-center gap-3 px-8 py-4 bg-brand-500 text-white rounded-full font-medium hover:bg-brand-600 transition-colors shadow-lg shadow-brand-200/50 w-full sm:w-auto justify-center">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    Send Email
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/dhianita-taurintyanna/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-8 py-4 bg-white text-brand-600 border border-brand-200 rounded-full font-medium hover:bg-brand-50 transition-colors shadow-sm w-full sm:w-auto justify-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                </a>
+            </div>
+            
+            <div class="pt-8 border-t border-brand-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-neutral-400">
+                <p>&copy; 2026 Roro Dhianita Taurintyanna. All rights reserved.</p>
+                <p>Designed with <span class="text-brand-400">♥</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Navbar Shadow -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-sm');
+                navbar.classList.add('bg-white/90');
+                navbar.classList.remove('bg-white/40');
+            } else {
+                navbar.classList.remove('shadow-sm');
+                navbar.classList.remove('bg-white/90');
+                navbar.classList.add('bg-white/40');
+            }
+        });
+    </script>
+</body>
+</html>
